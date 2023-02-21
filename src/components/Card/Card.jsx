@@ -1,6 +1,6 @@
 import { Link } from "@mui/material";
 import React from "react";
-import "./card.scss"
+import "./Card.scss"
 
 const Card = ({ item }) => {
     return (

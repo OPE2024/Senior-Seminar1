@@ -1,4 +1,5 @@
-import { Card } from '@mui/material';
+
+import Card from "../Card/Card";
 import React from 'react'
 import "./FeaturedProducts.scss"
 
@@ -8,11 +9,11 @@ const FeaturedProducts = ({type}) => {
         {
           id:1,
           img: "https://images.pexels.com/photos/1972115/pexels-photo-1972115.jpeg?autocompress&cs=tinysrgb&w=1600",
-        //   img2: "https://images.pexels.com/photos/1163194/pexels-photo-1163194.jpeg?autocompress&cs=tinysrgb&w=1600",
-        //   title: "Long Sleeve Graphic T-shirt",
-        //   isNew:true,
-        //   oldPrice: 19,
-        //   price: 12,
+          img2: "https://images.pexels.com/photos/1163194/pexels-photo-1163194.jpeg?autocompress&cs=tinysrgb&w=1600",
+          title: "Long Sleeve Graphic T-shirt",
+          isNew:true,
+          oldPrice: 19,
+          price: 12,
         },
       
       ];
@@ -26,9 +27,12 @@ const FeaturedProducts = ({type}) => {
             </p>
            </div> 
            <div className="bottom">
-             {data.map(item=>(
+           <>
+           {data.map(item=>(
                 <Card item={item} key={item.id}/>
              ))} 
+           </>
+             
            </div>
         </div>
       )

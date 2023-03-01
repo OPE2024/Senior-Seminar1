@@ -15,6 +15,7 @@ const FeaturedProducts = ({type}) => {
           oldPrice: 19,
           price: 12,
         },
+        
       
       ];
       
